@@ -1,4 +1,4 @@
-### 1. [Synchronous FIFO](./FIFO/synchronous fifo)
+### 1. [Synchronous FIFO](./FIFO/synchronous FIFO)
 
 A parameterized synchronous FIFO implemented in Verilog, supporting configurable `DEPTH` and `DATA_WIDTH`.
 
