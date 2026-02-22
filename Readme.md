@@ -177,5 +177,3 @@ Vamsi
 B.Tech | VLSI Enthusiast
 Focused on RTL Design and Verification
 
-
----
