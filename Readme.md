@@ -78,8 +78,6 @@ If both `w_en` and `r_en` are high:
 Simulation was performed using **Icarus Verilog**.
 
 1️)Compile
-
-```bash
 iverilog -g2005-sv FIFOsyn.v FIFOsyn_tb.v -o FIFOsyn_tb.vvp
 2️) Run
 vvp FIFOsyn_tb.vvp
