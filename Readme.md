@@ -170,8 +170,6 @@ Add randomized stress testing
 Implement Asynchronous FIFO version
 ```
 Author
-
 Vamsi
-B.Tech | VLSI Enthusiast
-Focused on RTL Design and Verification
+
 
