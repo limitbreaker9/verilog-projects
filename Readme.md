@@ -91,9 +91,9 @@ gtkwave dump.vcd
 
 The RTL was synthesized using Yosys (Open-source synthesis tool).
 
-1️⃣ Run Yosys
+1) Run Yosys
 yosys
-2️⃣ Inside Yosys, execute:
+2️)Inside Yosys, execute:
 read_verilog FIFOsyn.v
 synth -top synchronous_fifo
 write_json fifo.json
@@ -133,7 +133,7 @@ Pointer wrap-around
 
 Safe simultaneous read/write
 
-🏗 Synthesis
+Synthesis
 
 The design was synthesized and netlist generated.
 
@@ -147,7 +147,7 @@ show.dot
 
 These show the gate-level structure of the FIFO after synthesis.
 
-🎯 Concepts Demonstrated
+Concepts Demonstrated
 
 Parameterized RTL design
 
@@ -161,7 +161,7 @@ Fork-join in testbench
 
 Basic verification methodology
 
-🚀 Future Improvements
+Future Improvements
 
 Add self-checking SystemVerilog testbench
 
@@ -171,7 +171,7 @@ Add randomized stress testing
 
 Implement Asynchronous FIFO version
 
-👨‍💻 Author
+ Author
 
 Vamsi
 B.Tech | VLSI Enthusiast
