@@ -164,12 +164,3 @@ Focused on RTL Design and Verification
 ✔ Good for internship portfolio  
 
 ---
-
-If you want next, I can:
-
-- Write a **top-level README for the entire verilog-projects repo**
-- Improve this to “industry portfolio level”
-- Help you add GitHub badges and formatting polish
-- Suggest next project to add (RAM, ALU, FSM, etc.)
-
-Tell me what you want 🚀
