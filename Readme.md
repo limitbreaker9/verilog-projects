@@ -4,7 +4,7 @@ This project implements a **parameterized synchronous FIFO (First-In-First-Out)*
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 synchronous FIFO/
@@ -21,17 +21,17 @@ synchronous FIFO/
 └── show.dot                 # Netlist graph source file
 ```
 
-## 🔧 Design Description
+##  Design Description
 
-### 📌 FIFO Type
+###  FIFO Type
 - Synchronous FIFO
 - Single clock domain
 
-### 📌 Parameters
+###  Parameters
 - `DEPTH` (default: 8)
 - `DATA_WIDTH` (default: 8 bits)
 
-### 📌 Key Features
+###  Key Features
 - Write and Read pointer with wrap-around logic
 - Extra MSB bit for full detection
 - Full flag generation
@@ -41,30 +41,30 @@ synchronous FIFO/
 
 ---
 
-## ⚙️ How the FIFO Works
+##  How the FIFO Works
 
-### 🔹 Write Operation
+###  Write Operation
 - Enabled using `w_en`
 - Data written on `posedge clk`
 - Write pointer increments
 - Blocked when FIFO is full
 
-### 🔹 Read Operation
+###  Read Operation
 - Enabled using `r_en`
 - Data read on `posedge clk`
 - Read pointer increments
 - Blocked when FIFO is empty
 
-### 🔹 Full Condition
+###  Full Condition
 FIFO is full when:
 - MSB of write and read pointers differ
 - Lower bits are equal
 
-### 🔹 Empty Condition
+###  Empty Condition
 FIFO is empty when:
 - Write pointer equals read pointer
 
-### 🔹 Simultaneous Read & Write
+###  Simultaneous Read & Write
 If both `w_en` and `r_en` are high:
 - One data element is written
 - One data element is read
@@ -73,21 +73,21 @@ If both `w_en` and `r_en` are high:
 
 ---
 
-## ▶️ Simulation Instructions
+##  Simulation Instructions
 
 Simulation was performed using **Icarus Verilog**.
 
-### 1️⃣ Compile
+1️)Compile
 
 ```bash
 iverilog -g2005-sv FIFOsyn.v FIFOsyn_tb.v -o FIFOsyn_tb.vvp
-2️⃣ Run
+2️) Run
 vvp FIFOsyn_tb.vvp
-3️⃣ View Waveform
+3) View Waveform
 gtkwave dump.vcd
-📊 Simulation Results
+ Simulation Results
 ✔ Terminal Output
-Synthesis Using Yosys
+4)Synthesis Using Yosys
 
 The RTL was synthesized using Yosys (Open-source synthesis tool).
 
