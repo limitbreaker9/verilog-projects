@@ -87,7 +87,33 @@ vvp FIFOsyn_tb.vvp
 gtkwave dump.vcd
 📊 Simulation Results
 ✔ Terminal Output
+Synthesis Using Yosys
 
+The RTL was synthesized using Yosys (Open-source synthesis tool).
+
+1️⃣ Run Yosys
+yosys
+2️⃣ Inside Yosys, execute:
+read_verilog FIFOsyn.v
+synth -top synchronous_fifo
+write_json fifo.json
+write_verilog fifo_netlist.v
+write_dot show.dot
+Netlist Visualization
+
+The generated show.dot file was converted to graphical format using an online Graphviz (.dot) compiler.
+
+Steps followed:
+
+Open any online DOT viewer (e.g., Graphviz Online Viewer)
+
+Upload or paste show.dot
+
+Export as:
+
+PNG → FIFO netlist.png
+
+SVG → fifo netlist.svg
 See:
 
 FIFO terminal output.txt
@@ -151,16 +177,5 @@ Vamsi
 B.Tech | VLSI Enthusiast
 Focused on RTL Design and Verification
 
-
----
-
-# 🔥 Why This README Is Now Correct
-
-✔ Matches your actual file names  
-✔ Mentions netlist images  
-✔ Mentions terminal output file  
-✔ Mentions waveform image  
-✔ Professional structure  
-✔ Good for internship portfolio  
 
 ---
