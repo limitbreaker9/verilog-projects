@@ -6,22 +6,20 @@ This project implements a **parameterized synchronous FIFO (First-In-First-Out)*
 
 ## 📁 Project Structure
 
-
+```
 synchronous FIFO/
 │
-├── FIFOsyn.v # RTL Design of Synchronous FIFO
-├── FIFOsyn_tb.v # Testbench
-├── FIFOsyn_tb.vvp # Compiled simulation file (Icarus Verilog)
+├── FIFOsyn.v                # RTL Design of Synchronous FIFO
+├── FIFOsyn_tb.v             # Testbench
+├── FIFOsyn_tb.vvp           # Compiled simulation file (Icarus Verilog)
 │
-├── waveform of FIFO.png # Simulation waveform screenshot
+├── waveform of FIFO.png     # Simulation waveform screenshot
 ├── FIFO terminal output.txt # Console simulation output
 │
-├── FIFO netlist.png # Synthesized netlist (image)
-├── fifo netlist.svg # Synthesized netlist (vector format)
-├── show.dot # Netlist graph source file
-
-
----
+├── FIFO netlist.png         # Synthesized netlist (image)
+├── fifo netlist.svg         # Synthesized netlist (vector format)
+└── show.dot                 # Netlist graph source file
+```
 
 ## 🔧 Design Description
 
