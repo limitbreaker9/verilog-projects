@@ -76,7 +76,7 @@ If both `w_en` and `r_en` are high:
 ##  Simulation Instructions
 
 Simulation was performed using **Icarus Verilog**.
-
+```
 1️)Compile
 iverilog -g2005-sv FIFOsyn.v FIFOsyn_tb.v -o FIFOsyn_tb.vvp
 2️) Run
@@ -168,8 +168,8 @@ Add assertions
 Add randomized stress testing
 
 Implement Asynchronous FIFO version
-
- Author
+```
+Author
 
 Vamsi
 B.Tech | VLSI Enthusiast
